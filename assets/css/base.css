@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Pacifico", cursive;
 }
 
 body {
@@ -16,4 +17,34 @@ canvas {
 
 img {
   max-width: 400px;
+}
+
+/* Tablet & Mobile */
+/* Mobile */
+@media (max-width: 63.9375em) {
+  .main {
+    display: none !important;
+  }
+
+  .hehe {
+    color: #fff;
+    height: 100vh;
+    display: block !important;
+    position: relative;
+  }
+
+  .hehe h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+  }
+}
+
+::selection {
+  background: transparent;
+}
+::-moz-selection {
+  background: transparent;
 }
