@@ -1,9 +1,13 @@
 var x = document.getElementById("mySong");
+var y = document.getElementById("myBum");
 
 function musicPlay() {
   // Click autophay
   x.autoplay = true;
   x.load();
+
+  y.autoplay = true;
+  y.load();
 
   // Display
   document.getElementById("firework").style.display = "block";

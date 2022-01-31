@@ -16,8 +16,12 @@
           <source src="./assets/audio/Tet Dong Day.mp3" type="audio/ogg" />
         </audio>
 
+        <audio style="display: none" id="myBum" controls loop>
+          <source src="./assets/audio/firework.mp3" type="audio/ogg" />
+        </audio>
+
         <!-- Button -->
-        <span id="buttonBtnPlay" onclick="btnDisplay()">
+        <div id="buttonBtnPlay" onclick="btnDisplay()">
           <button class="btn" onclick="musicPlay()" type="button">
             <span
               id="tiger-no-color"
@@ -31,20 +35,22 @@
               data-icon="emojione:tiger"
             ></span>
           </button>
-        </span>
+        </div>
       </div>
 
       <!-- Contain -->
       <div id="firework" class="contain">
-        <!-- <div id="images" class="image">
-          <div class="image-1">
-            <img src="./assets/img/hoa-mai-1.png" alt="" />
-          </div>
+        <div class="text">
+          <i>Happy New Year!!</i>
+        </div>
 
-          <div class="image-2">
-            <img src="./assets/img/hoa-mai-2.png" alt="" />
-          </div>
-        </div> -->
+        <span class="img-1">
+          <img src="./assets/img/hoa-mai-1.png" alt="" />
+        </span>
+
+        <span class="img-2">
+          <img src="./assets/img/hoa-mai-2.png" alt="" />
+        </span>
 
         <canvas id="canvas">Canvas is not supported in your browser.</canvas>
       </div>

@@ -6,10 +6,14 @@
 
 body {
   background: #000;
-  margin: 0;
+  overflow: hidden;
 }
 
 canvas {
   cursor: crosshair;
   display: block;
+}
+
+img {
+  max-width: 400px;
 }
