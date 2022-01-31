@@ -1,0 +1,64 @@
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contain {
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  display: none;
+  position: relative;
+}
+.image-1 {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+}
+
+.image-2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+#music {
+  z-index: 2;
+}
+
+#myMusicPlay:active {
+  animation: growth linear 0.4s;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:active {
+  animation: growth linear 1s;
+}
+
+.btn:active .icon-no-color {
+  display: none;
+}
+
+.btn:active .icon-color {
+  display: block;
+  animation: growth linear 0.025s;
+}
+
+.iconify {
+  padding: 8px;
+  font-size: 200px;
+  color: #fff;
+}
+
+.icon-color {
+  display: none;
+}

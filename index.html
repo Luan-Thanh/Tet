@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Tet Holiday</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- Music -->
+      <div id="music">
+        <audio style="display: none" id="mySong" controls loop>
+          <source src="./assets/audio/Tet Dong Day.mp3" type="audio/ogg" />
+        </audio>
+
+        <!-- Button -->
+        <span id="buttonBtnPlay" onclick="btnDisplay()">
+          <button class="btn" onclick="musicPlay()" type="button">
+            <span
+              id="tiger-no-color"
+              class="iconify icon-no-color"
+              data-icon="emojione-monotone:tiger"
+            ></span>
+
+            <span
+              id="tiger-color"
+              class="iconify icon-color"
+              data-icon="emojione:tiger"
+            ></span>
+          </button>
+        </span>
+      </div>
+
+      <!-- Contain -->
+      <div id="firework" class="contain">
+        <!-- <div id="images" class="image">
+          <div class="image-1">
+            <img src="./assets/img/hoa-mai-1.png" alt="" />
+          </div>
+
+          <div class="image-2">
+            <img src="./assets/img/hoa-mai-2.png" alt="" />
+          </div>
+        </div> -->
+
+        <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+  <script src="./assets/script/firework.js"></script>
+  <script src="./assets/script/main.js"></script>
+</html>
